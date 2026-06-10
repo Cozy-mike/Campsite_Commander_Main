@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Splash Screen Layout: Shows logo and app title for 3 seconds -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/forest_dark"
+    android:padding="32dp">
+
+    <!-- Campfire/Pine tree emoji as logo (replace with actual drawable if desired) -->
+    <TextView
+        android:id="@+id/tvLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="🏕️"
+        android:textSize="96sp"
+        android:layout_marginBottom="24dp"/>
+
+    <!-- App Title -->
+    <TextView
+        android:id="@+id/tvAppTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Campsite Commander"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="@color/golden_yellow"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- Subtitle -->
+    <TextView
+        android:id="@+id/tvSubtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your outdoor gear companion"
+        android:textSize="16sp"
+        android:textColor="@color/light_green"/>
+
+    <!-- Loading indicator text -->
+    <TextView
+        android:id="@+id/tvLoading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Loading your pack..."
+        android:textSize="12sp"
+        android:textColor="@color/light_green"
+        android:layout_marginTop="48dp"/>
+
+</LinearLayout>

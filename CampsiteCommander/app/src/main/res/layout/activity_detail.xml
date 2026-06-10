@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Detail / Gear List Screen Layout -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/dark_bg">
+
+    <!-- Header bar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/card_bg"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="📋 Gear Checklist"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/cream_white"
+            android:layout_marginBottom="6dp"/>
+
+        <!-- Dynamic count updated in DetailActivity -->
+        <TextView
+            android:id="@+id/tvGearCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0 Items in your pack"
+            android:textSize="14sp"
+            android:textColor="@color/accent_green"/>
+
+    </LinearLayout>
+
+    <!-- Scrollable list of gear items - dynamically populated via loop -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="16dp">
+
+        <!-- LinearLayout that gear item cards are added to programmatically -->
+        <LinearLayout
+            android:id="@+id/llGearContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"/>
+
+    </ScrollView>
+
+    <!-- Back to Base Navigation Button -->
+    <Button
+        android:id="@+id/btnBackToBase"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="🏠  Back to Base"
+        android:textSize="17sp"
+        android:textColor="@color/cream_white"
+        android:backgroundTint="@color/card_bg"
+        android:layout_margin="16dp"/>
+
+</LinearLayout>

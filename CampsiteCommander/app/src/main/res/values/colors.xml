@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Nature-themed Dark Mode colour palette for Campsite Commander -->
+<resources>
+    <!-- Primary dark background - deep forest green/black -->
+    <color name="forest_dark">#1A2B1A</color>
+
+    <!-- Card/panel background - slightly lighter dark green -->
+    <color name="card_background">#243324</color>
+
+    <!-- Accent gold - like a campfire glow -->
+    <color name="golden_yellow">#FFD166</color>
+
+    <!-- Soft nature green for labels -->
+    <color name="light_green">#90C890</color>
+
+    <!-- Button colours -->
+    <color name="button_green">#2E7D32</color>
+    <color name="button_brown">#5D4037</color>
+
+    <!-- Text colours -->
+    <color name="white">#FFFFFF</color>
+    <color name="hint_color">#888888</color>
+
+    <!-- Status bar -->
+    <color name="colorPrimary">#1A2B1A</color>
+    <color name="colorPrimaryDark">#0F1A0F</color>
+    <color name="colorAccent">#FFD166</color>
+</resources>

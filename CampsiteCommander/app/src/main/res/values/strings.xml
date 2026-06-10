@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Campsite Commander</string>
+    <string name="splash_title">Campsite Commander</string>
+    <string name="splash_subtitle">Your outdoor gear companion</string>
+    <string name="main_title">Base Camp</string>
+    <string name="btn_add_gear">Add Gear</string>
+    <string name="btn_view_gear">View Full Gear List</string>
+    <string name="btn_back_to_base">Back to Base</string>
+</resources>

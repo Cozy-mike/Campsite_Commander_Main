@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Main Screen Layout: Hub with total count and navigation buttons -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/forest_dark"
+    android:padding="24dp">
+
+    <!-- App Header -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="🏕️ Campsite Commander"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@color/golden_yellow"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Base Camp"
+        android:textSize="14sp"
+        android:textColor="@color/light_green"
+        android:layout_marginBottom="32dp"/>
+
+    <!-- Total Items Packed - calculated using a loop in GearData -->
+    <TextView
+        android:id="@+id/tvTotalItems"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="🎒 Total Items Packed: 0"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:background="@color/card_background"
+        android:padding="20dp"
+        android:layout_marginBottom="32dp"/>
+
+    <!-- Add Gear Button -->
+    <Button
+        android:id="@+id/btnAddGear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="➕  Add Gear"
+        android:textSize="16sp"
+        android:backgroundTint="@color/button_green"
+        android:textColor="@color/white"
+        android:layout_marginBottom="16dp"
+        android:padding="16dp"/>
+
+    <!-- View Gear List Button -->
+    <Button
+        android:id="@+id/btnViewGear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="📋  View Full Gear List"
+        android:textSize="16sp"
+        android:backgroundTint="@color/button_brown"
+        android:textColor="@color/white"
+        android:padding="16dp"/>
+
+</LinearLayout>

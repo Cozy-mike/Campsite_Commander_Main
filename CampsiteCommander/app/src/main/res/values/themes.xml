@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Dark/nature theme for Campsite Commander -->
+    <style name="Theme.CampsiteCommander" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="colorPrimary">@color/forest_dark</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/golden_yellow</item>
+        <item name="android:windowBackground">@color/forest_dark</item>
+    </style>
+
+    <!-- Splash screen has no action bar -->
+    <style name="Theme.CampsiteCommander.Splash" parent="Theme.CampsiteCommander">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+</resources>

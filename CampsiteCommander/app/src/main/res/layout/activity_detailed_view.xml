@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Detailed View Screen: Scrollable list of all gear with full details -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/forest_dark">
+
+    <!-- Header Bar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/card_background"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="📋 Full Gear List"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@color/golden_yellow"/>
+
+        <!-- Shows total gear entries and total item count -->
+        <TextView
+            android:id="@+id/tvGearCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Loading..."
+            android:textSize="13sp"
+            android:textColor="@color/light_green"
+            android:layout_marginTop="4dp"/>
+    </LinearLayout>
+
+    <!-- Scrollable gear list - cards added programmatically via loop -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:id="@+id/containerGearList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"/>
+    </ScrollView>
+
+    <!-- Back to Base navigation button -->
+    <Button
+        android:id="@+id/btnBackToBase"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="🏠  Back to Base"
+        android:textSize="16sp"
+        android:backgroundTint="@color/button_brown"
+        android:textColor="@color/white"
+        android:margin="16dp"
+        android:padding="14dp"/>
+
+</LinearLayout>
